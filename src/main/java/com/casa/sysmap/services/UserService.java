@@ -29,9 +29,9 @@ public interface UserService {
 
 	Page<RequestUser> findAllPageableUsers(Pageable pageable);
 
-	List<RequestUser> addFriend(User user);
+	List<RequestUser> addFollower(User user);
 
-	List<RequestUser> removeFriend(User user);
+	List<RequestUser> removeFollower(User user);
 
 	RequestUser addPhoto(User user);
 }

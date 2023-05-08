@@ -96,22 +96,22 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<RequestUser> addFriend(User user) {
+	public List<RequestUser> addFollower(User user) {
 		User foundUser = findUserById(user.getId());
-		User friend = findUserById(user.getUser().getId());
-		RequestUser friendDto = userToDtoUser(friend);
-		foundUser.getFollowers().add(friendDto);
+		User follower = findUserById(user.getUser().getId());
+		RequestUser dto = userToDtoUser(follower);
+		foundUser.getFollowers().add(dto);
 		foundUser.setId(user.getId());
 		userRepository.save(foundUser);
 		return foundUser.getFollowers();
 	}
 
 	@Override
-	public List<RequestUser> removeFriend(User user) {
+	public List<RequestUser> removeFollower(User user) {
 		User foundUser = findUserById(user.getId());
-		User friend = findUserById(user.getUser().getId());
-		RequestUser friendDto = userToDtoUser(friend);
-		foundUser.getFollowers().remove(friendDto);
+		User follower = findUserById(user.getUser().getId());
+		RequestUser dto = userToDtoUser(follower);
+		foundUser.getFollowers().remove(dto);
 		foundUser.setId(user.getId());
 		userRepository.save(foundUser);
 		return foundUser.getFollowers();

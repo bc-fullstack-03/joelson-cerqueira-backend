@@ -66,12 +66,12 @@ public class UserController {
 
 	@PostMapping("/addFriend")
 	public ResponseEntity<List<RequestUser>> addEntityFriends(@RequestBody User user) {
-		return ResponseEntity.ok(userService.addFriend(user));
+		return ResponseEntity.ok(userService.addFollower(user));
 	}
 
 	@PutMapping("/removeFriend")
 	public ResponseEntity<List<RequestUser>> removeEntityFriends(@RequestBody User user) {
-		return ResponseEntity.ok(userService.removeFriend(user));
+		return ResponseEntity.ok(userService.removeFollower(user));
 	}
 
 	@PostMapping("/addPhoto")
