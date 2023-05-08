@@ -74,8 +74,6 @@
 #
 #
 * Os demais endpoints eu não irei descrever pois entendo que são endpoints padrão, 
-* comuns de um crud simples e não precisam de explicação para serem testados. Eu 
-* só estou comentados os endpoints acima por que os montei de maneira peculiar e 
-* portanto acho que necessitam de uma explicação para serem entendidos.
+* comuns de um crud simples e não precisam de explicação para serem testados.
 
 
