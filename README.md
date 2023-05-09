@@ -1,6 +1,8 @@
 # Joelson-Cerqueira-Backend
 
-## Estou deixando abaixo um guia de como utilizar os endpoints que desenvolvi.
+* Perfil do DockerHub : joelson0935
+#
+## Guia para usar os endpoints abaixo : 
 
 * AddFollower : {
 * "id":"51a6c791-4afa-4ba3-aeb2-01506a8fad5d",
